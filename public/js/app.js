@@ -23807,6 +23807,11 @@ __webpack_require__("./resources/assets/js/bootstrap.js");
 //     el: '#app'
 // });
 
+// Initialize collapse button
+$(".button-collapse").sideNav();
+// Initialize collapsible (uncomment the line below if you use the dropdown variation)
+//$('.collapsible').collapsible();
+
 /***/ }),
 
 /***/ "./resources/assets/js/bootstrap.js":

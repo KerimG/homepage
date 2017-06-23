@@ -20,3 +20,8 @@ require('./bootstrap');
 // const app = new Vue({
 //     el: '#app'
 // });
+
+// Initialize collapse button
+$(".button-collapse").sideNav();
+// Initialize collapsible (uncomment the line below if you use the dropdown variation)
+//$('.collapsible').collapsible();
