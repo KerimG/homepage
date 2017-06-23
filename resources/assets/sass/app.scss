@@ -2,3 +2,39 @@
 @import 'variables';
 @import '../../../node_modules/normalize.css/normalize.css';
 
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: $font-base;
+}
+
+.container {
+  width: 96%;
+  height: 100%;
+  margin: 0 auto;
+
+  @include desktop {
+    max-width: 1280px;
+  }
+}
+
+.page-title {
+  font-family: $font-title;
+  margin-top: 0;
+  font-size: 1.5em;
+  color: #212121;
+  padding-top: 0.5em;
+  @include tablet-and-up {
+    text-align: left;
+    font-size: 2em;
+  }
+}

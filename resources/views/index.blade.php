@@ -1,28 +1,27 @@
 @extends('layout.page')
 
 @section('content')
-    <h1 class="hide">Kerim's Homepage</h1>
-    <nav>
+    <div class="container">
+        <h1 class="page-title">Kerim's Homepage</h1>
+        <header>
+            <p class="introduction">
+                Hello and welcome to my humble website! My name's Kerim and I'm a web developer and general technology enthusiast based in Germany.
+            </p>
+        </header>
+        <section class="latest-blog">
+            <p>
+                Over here is my latest blog entry, "[blog entry title]"
+            </p>
+            <p>
+                and here's my Github profile. If a repo interests you, check out my projects page and you might find
+                more information about it.
+            </p>
+            <p>
+                and all sorts of ways you can contact me
+            </p>
+            <p>
 
-        <ul id="slide-out" class="side-nav">
-            <li>
-                <div class="user-view">
-                    <div class="background">
-                        <img src="{{URL::asset('/img/office.jpg')}}">
-                    </div>
-                    <a href="#!user"><img class="circle" src="img/yuna.jpg"></a>
-                    <a href="#!name"><span class="white-text name">John Doe</span></a>
-                    <a href="#!email"><span class="white-text email">jdandturk@gmail.com</span></a>
-                </div>
-            </li>
-            <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
-            <li><a href="#!">Second Link</a></li>
-            <li>
-                <div class="divider"></div>
-            </li>
-            <li><a class="subheader">Subheader</a></li>
-            <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
-        </ul>
-        <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
-    </nav>
+            </p>
+        </section>
+    </div>
 @stop
