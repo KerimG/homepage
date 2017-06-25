@@ -1,0 +1,21 @@
+.hidden {
+  display: none !important;
+
+  &--tablet {
+    @include tablet {
+      display: none !important;
+    }
+  }
+
+  &--tablet-and-up {
+    @include tablet-and-up {
+      display: none !important;
+    }
+  }
+
+  &--desktop {
+    @include desktop {
+      display: none !important;
+    }
+  }
+}
