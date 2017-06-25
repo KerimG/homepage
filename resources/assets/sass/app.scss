@@ -1,5 +1,6 @@
 @import 'mixins';
 @import 'variables';
+@import 'modifiers';
 @import '../../../node_modules/normalize.css/normalize.css';
 
 *, *:before, *:after {
@@ -15,6 +16,8 @@ html, body {
 
 body {
   font-family: $font-base;
+  background-color: rgba(250, 248, 223, 0.24);
+  font-size: 20px;
 }
 
 .container {
@@ -37,4 +40,19 @@ body {
     text-align: left;
     font-size: 2em;
   }
+}
+
+.introduction, .more-info, .latest-entry {
+  &-title {
+    font-family: $font-title;
+    color: $primary-color;
+  }
+}
+
+.introduction-paragraph {
+  font-size: 1.2em;
+}
+
+.separator {
+  text-align: center;
 }

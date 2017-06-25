@@ -2,26 +2,36 @@
 
 @section('content')
     <div class="container">
-        <h1 class="page-title">Kerim's Homepage</h1>
+        <h1 class="page-title hidden">Kerim's Homepage</h1>
         <header>
-            <p class="introduction">
-                Hello and welcome to my humble website! My name's Kerim and I'm a web developer and general technology enthusiast based in Germany.
-            </p>
+            <div class="introduction">
+                <h2 class="introduction-title">
+                    Hey, I'm Kerim. Nice to meet you!
+                </h2>
+                <p class="introduction-paragraph">
+                    I'm a web developer and general technology enthusiast based in <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Wuppertal">Germany</a>.
+                </p>
+            </div>
         </header>
-        <section class="latest-blog">
+        <div class="separator hidden--tablet-and-up">
+            <p>&#9830; &#9830; &#9830;</p>
+        </div>
+        <section>
+            <h4 class="more-info-title">More about me and other interesting things:</h4>
             <p>
-                Over here is my latest blog entry, "[blog entry title]"
+                If you would like to contact me, <a href="mailto:kerim@gueney.org">email me</a>.
             </p>
             <p>
-                and here's my Github profile. If a repo interests you, check out my projects page and you might find
-                more information about it.
+                Visit my <a target="_blank" rel="noopener" href="https://github.com/kerimg">GitHub</a> Profile.
             </p>
             <p>
-                and all sorts of ways you can contact me
+                Befriend me on <a target="_blank" rel="noopener" href="https://www.xing.com/profile/Kerim_Gueney3">XING</a>.
             </p>
-            <p>
-
-            </p>
+            <p>Check out the <a target="_blank" rel="noopener" href="http://fai-project.org">FAI Project</a></p>
+        </section>
+        <section>
+            <h4 class="latest-entry-title">What I wrote about the other day:</h4>
+            <p><a href="">[TITLE OF LAST BLOG ENTRY]</a></p>
         </section>
     </div>
 @stop
