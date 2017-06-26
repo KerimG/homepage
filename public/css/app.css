@@ -448,6 +448,28 @@ template {
 [hidden] {
   display: none;
 }
+.hidden {
+  display: none !important;
+}
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) {
+  .hidden--tablet {
+    display: none !important;
+  }
+}
+
+@media only screen and (min-device-width: 481px) {
+  .hidden--tablet-and-up {
+    display: none !important;
+  }
+}
+
+@media only screen and (min-device-width: 1025px) {
+  .hidden--desktop {
+    display: none !important;
+  }
+}
+
 *,
 *:before,
 *:after {
@@ -463,6 +485,8 @@ body {
 
 body {
   font-family: "News Cycle", sans-serif;
+  background-color: rgba(250, 248, 223, 0.24);
+  font-size: 20px;
 }
 
 .container {
@@ -490,5 +514,20 @@ body {
     text-align: left;
     font-size: 2em;
   }
+}
+
+.introduction-title,
+.more-info-title,
+.latest-entry-title {
+  font-family: "Roboto Slab", sans-serif;
+  color: #fb4639;
+}
+
+.introduction-paragraph {
+  font-size: 1.2em;
+}
+
+.separator {
+  text-align: center;
 }
 
