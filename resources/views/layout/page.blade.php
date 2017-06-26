@@ -11,6 +11,9 @@
 </head>
 <body>
 @yield('content')
+<footer class="container text--center">
+    <a href="/imprint">Imprint</a>
+</footer>
 @yield('scripts')
 <script src="{{ mix('/js/app.js') }}"></script>
 <!-- Piwik -->
