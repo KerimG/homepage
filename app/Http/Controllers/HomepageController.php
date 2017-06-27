@@ -10,4 +10,9 @@ class HomepageController extends Controller
     {
         return view('index');
     }
+
+    public function imprint()
+    {
+        return view('imprint');
+    }
 }
