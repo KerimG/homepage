@@ -14,3 +14,5 @@
 Route::get('/', 'HomepageController@index');
 
 Route::get('/imprint', 'HomepageController@imprint');
+
+Route::get('/blog', 'BlogController@frontpage');

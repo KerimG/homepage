@@ -31,7 +31,7 @@
         </section>
         <section>
             <h4 class="latest-entry-title">What I wrote about the other day:</h4>
-            <p><a href="">[TITLE OF LAST BLOG ENTRY]</a></p>
+            <p><a href="{{ action('BlogController@frontpage') }}">[TITLE OF LAST BLOG ENTRY]</a></p>
         </section>
     </div>
 @stop
