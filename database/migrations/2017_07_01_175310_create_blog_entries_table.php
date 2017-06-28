@@ -15,6 +15,11 @@ class CreateBlogEntriesTable extends Migration
     {
         Schema::create('blog_entries', function (Blueprint $table) {
             $table->increments('id');
+            $table->text('title');
+            $table->text('slug');
+            $table->text('text');
+            $table->timestamp('creation_date');
+            $table->timestamp('last_modified');
             $table->timestamps();
         });
     }
