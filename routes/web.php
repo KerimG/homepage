@@ -16,3 +16,7 @@ Route::get('/', 'HomepageController@index');
 Route::get('/imprint', 'HomepageController@imprint');
 
 Route::get('/blog', 'BlogController@frontpage');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
