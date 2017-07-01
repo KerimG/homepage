@@ -19,6 +19,10 @@
                     <input id="password" type="password" class="form-control" name="password" required>
                 </div>
             </fieldset>
+
+            <button type="submit">
+                Login
+            </button>
         </form>
 
 
