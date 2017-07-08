@@ -14,6 +14,11 @@ class BlogController extends Controller
         return view('blog.frontpage', ['latestBlogEntries' => $latestBlogEntries]);
     }
 
+    public function blogEntryPage($entryUrl)
+    {
+        return view('blog.blogEntry', ['blog_entry' => BlogEntry::where('url', $entryUrl)->first()]);
+    }
+
     public function create(Request $request)
     {
         $data = $request->all();

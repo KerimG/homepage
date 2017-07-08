@@ -5,7 +5,9 @@
         @foreach($latestBlogEntries as $blog_entry)
             <article>
                 <h3>
-                    {{ $blog_entry->title }}
+                    <a href="{{ route('getBlogEntry', ['entryUrl' => $blog_entry->url])  }}">
+                        {{ $blog_entry->title }}
+                    </a>
                 </h3>
                 <p class="slug">
                     {{ $blog_entry->slug }}

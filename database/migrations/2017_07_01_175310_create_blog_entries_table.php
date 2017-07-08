@@ -17,6 +17,7 @@ class CreateBlogEntriesTable extends Migration
             $table->increments('id');
             $table->text('title');
             $table->text('slug')->nullable();
+            $table->text('url')->nullable();
             $table->text('text')->nullable();
             $table->timestamp('last_modified')->nullable();
             $table->timestamps();
