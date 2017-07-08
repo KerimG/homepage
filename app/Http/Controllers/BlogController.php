@@ -16,7 +16,7 @@ class BlogController extends Controller
 
     public function blogEntryPage($entryUrl)
     {
-        return view('blog.blogEntry', ['blog_entry' => BlogEntry::where('url', $entryUrl)->first()]);
+        return view('blog.blogEntry', ['blogEntry' => BlogEntry::where('url', $entryUrl)->first()]);
     }
 
     public function create(Request $request)

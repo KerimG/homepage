@@ -1,31 +1,31 @@
 @extends('layouts.page')
 
 @section('content')
-<div class="container">
-    <form role="form" method="POST" action="{{ route('createBlogEntry') }}">
-        {{ csrf_field() }}
+    <div class="container">
+        <form role="form" method="POST" action="{{ route('createBlogEntry') }}">
+            {{ csrf_field() }}
 
-        <fieldset>
-            <label for="title">Title</label>
-            <input type="text" name="title" id="title" placeholder="Title of your blog entry">
-        </fieldset>
+            <fieldset>
+                <label for="title">Title</label>
+                <input type="text" name="title" id="title" placeholder="Title of your blog entry">
+            </fieldset>
 
-        <fieldset>
-            <label for="text">Text</label>
-            <textarea name="text" id="text" cols="50" rows="15">
+            <fieldset>
+                <label for="text">Text</label>
+                <textarea name="text" id="text" cols="50" rows="15">
 
             </textarea>
-        </fieldset>
+            </fieldset>
 
-        <fieldset>
-            <label for="slug">Slug</label>
-            <textarea name="slug" id="slug" cols="30" rows="10">
+            <fieldset>
+                <label for="slug">Slug</label>
+                <textarea name="slug" id="slug" cols="30" rows="10">
             </textarea>
-        </fieldset>
+            </fieldset>
 
-        <button type="submit">
-            Login
-        </button>
-    </form>
-</div>
+            <button type="submit">
+                Login
+            </button>
+        </form>
+    </div>
 @endsection

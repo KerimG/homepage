@@ -101,5 +101,4 @@
             in der zuvor beschriebenen Art und Weise und zu dem zuvor benannten Zweck einverstanden.
         </p>
     </div>
-
 @stop
