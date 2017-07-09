@@ -11,9 +11,13 @@
             </fieldset>
 
             <fieldset>
+                <label for="url">URL:</label>
+                <input name="url" id="url">
+            </fieldset>
+
+            <fieldset>
                 <label for="text">Text</label>
                 <textarea name="text" id="text" cols="50" rows="15">
-
             </textarea>
             </fieldset>
 
@@ -24,7 +28,7 @@
             </fieldset>
 
             <button type="submit">
-                Login
+                Save
             </button>
         </form>
     </div>
