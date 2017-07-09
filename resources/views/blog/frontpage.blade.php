@@ -1,6 +1,9 @@
 @extends('layouts.page')
 
 @section('content')
+    <header class="container">
+        <a class="inline-block padding-1em" href="{{ action('HomepageController@index') }}">Homepage</a>
+    </header>
     <div class="container">
         @foreach($latestArticles as $article)
             <article>

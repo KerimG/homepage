@@ -31,3 +31,19 @@
     text-align: right !important;
   }
 }
+
+.inline-block {
+  display: inline-block !important;
+}
+
+.flex {
+  display: flex !important;
+
+  &--space-between {
+    justify-content: space-between !important;
+  }
+}
+
+.padding-1em {
+  padding: 1em !important;
+}

@@ -482,6 +482,26 @@ template {
   text-align: right !important;
 }
 
+.inline-block {
+  display: inline-block !important;
+}
+
+.flex {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+
+.flex--space-between {
+  -webkit-box-pack: justify !important;
+      -ms-flex-pack: justify !important;
+          justify-content: space-between !important;
+}
+
+.padding-1em {
+  padding: 1em !important;
+}
+
 *,
 *:before,
 *:after {
