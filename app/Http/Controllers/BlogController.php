@@ -23,10 +23,13 @@ class BlogController extends Controller
     {
         $data = $request->all();
 
-        return BlogEntry::create([
+        $blogEntry = BlogEntry::create([
             'title' => $data['title'],
+            'url' => $data['url'],
             'slug' => $data['slug'],
             'text' => $data['text']
         ]);
+
+        return view('blog.blogEntry', ['blogEntry' => $blogEntry]);
     }
 }
