@@ -8,12 +8,6 @@ use App\Article;
 
 class ArticleController extends Controller
 {
-    public function frontpage()
-    {
-        $latestArticle = Article::orderBy('created_at', 'desc')->take(5)->get();
-        return view('blog.frontpage', ['latestArticles' => $latestArticle]);
-    }
-
     public function article($articleUrl)
     {
         return view('blog.article', ['article' => Article::where('url', $articleUrl)->first()]);
