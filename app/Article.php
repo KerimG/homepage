@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class BlogEntry extends Model
+class Article extends Model
 {
     protected $fillable = ['title', 'slug', 'url', 'text', 'last_modified'];
 }

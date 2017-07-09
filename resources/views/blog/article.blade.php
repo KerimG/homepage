@@ -4,10 +4,10 @@
     <div class="container">
         <article>
             <h3>
-                {{ $blogEntry->title }}
+                {{ $article->title }}
             </h3>
             <p class="blog-text">
-                {{ $blogEntry->text }}
+                {{ $article->text }}
             </p>
         </article>
     </div>

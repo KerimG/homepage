@@ -29,21 +29,21 @@
             <p>
                 Check out the awesome <a target="_blank" rel="noopener" href="http://fai-project.org">FAI Project</a>
             </p>
-            @if(isset($lastBlogEntry))
+            @if(isset($lastArticle))
                 <p>
                     or check out <a href="{{ route("blog") }}">my blog!</a>
                 </p>
             @endif
         </section>
-        @if(isset($lastBlogEntry))
+        @if(isset($lastArticle))
             <section>
                 <h4 class="latest-entry-title">What I wrote about the other day:</h4>
                 <article>
                     <h3>
-                        <a href="{{ route('getBlogEntry', ['entryUrl' => $lastBlogEntry->url]) }}">{{ $lastBlogEntry->title }}</a>
+                        <a href="{{ route('getArticle', ['articleUrl' => $lastArticle->url]) }}">{{ $lastArticle->title }}</a>
                     </h3>
                     <p class="slug">
-                        {{ $lastBlogEntry->slug }}
+                        {{ $lastArticle->slug }}
                     </p>
                 </article>
             </section>

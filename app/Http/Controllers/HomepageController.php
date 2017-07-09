@@ -2,15 +2,15 @@
 
 namespace App\Http\Controllers;
 
-use App\BlogEntry;
+use App\Article;
 use Illuminate\Http\Request;
 
 class HomepageController extends Controller
 {
     public function index()
     {
-        $lastBlogEntry = BlogEntry::orderBy('created_at', 'desc')->first();
-        return view('index', ['lastBlogEntry' => $lastBlogEntry]);
+        $lastArticle = Article::orderBy('created_at', 'desc')->first();
+        return view('index', ['lastArticle' => $lastArticle]);
     }
 
     public function imprint()
