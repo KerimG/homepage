@@ -17,6 +17,7 @@
 @yield('content')
 
 <footer class="container text--center">
+    <span>&copy; {{ date("Y") }} Kerim Gueney, Some Rights Reserved - </span>
     <a href="{{ action('HomepageController@imprint') }}">Imprint</a>
 </footer>
 
