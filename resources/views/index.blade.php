@@ -17,7 +17,7 @@
         <section>
             <h4 class="more-info-title">How to contact me and other interesting things:</h4>
             <p>
-                You can email <a href="mailto:kerim@gueney.org">here</a>.
+                You can email me <a href="mailto:kerim@gueney.org">here</a>.
             </p>
             <p>
                 Befriend me on <a target="_blank" rel="noopener"
