@@ -26,6 +26,15 @@ body {
   }
 }
 
+.navigation {
+  display: flex;
+  justify-content: space-between;
+
+  @include tablet-and-up {
+    justify-content: flex-start;
+  }
+}
+
 .page-title {
   font-family: $font-title;
   margin-top: 0;

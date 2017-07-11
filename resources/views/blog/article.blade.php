@@ -1,7 +1,7 @@
 @extends('layouts.page')
 
 @section('content')
-    <header class="container flex flex--space-between">
+    <header class="container navigation">
         <a class="inline-block padding-1em" href="{{ action('HomepageController@index') }}">Homepage</a>
         <a class="inline-block padding-1em" href="{{ action('BlogController@frontpage') }}">Blog</a>
     </header>
